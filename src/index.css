@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: min(1800px, calc(100vw - 40px));
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid rgba(148, 163, 184, 0.25);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  #root {
+    width: 100%;
+    border-inline: 0;
+  }
+}
